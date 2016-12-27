@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#sky{
+  z-index: -1;
+  position: fixed;
+    
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100%;
+  height: 100%;
+}
+
+#root{
+  width: 80%;
+  margin: auto;
+  padding: 20px 10px;
+}
+
+#header{
+  text-align: center;
+  border: 1px solid;
+  margin-bottom: 20px;
+  border-radius: 15px 15px 0px 0px;
+  background-image: url("./img/header.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #559172;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#navigation{
+  font-size: 1.5em;
+  margin: 20px 0px;
+}
+
+#nav{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav li{
+  border: 1px solid;
+  border-radius: 10px;
+  display: inline-block;
+  width: 15%;
+  margin-right: 3%;
+  text-align: center;
+  padding: 20px 0px;
+  background: #a1dbff;
+  background: -moz-linear-gradient(top, #a1dbff 14%, #f0f9ff 33%, #f0f9ff 63%, #a1dbff 84%);
+  background: -webkit-linear-gradient(top, #a1dbff 14%,#f0f9ff 33%,#f0f9ff 63%,#a1dbff 84%);
+  background: linear-gradient(to bottom, #a1dbff 14%,#f0f9ff 33%,#f0f9ff 63%,#a1dbff 84%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1dbff', endColorstr='#a1dbff',GradientType=0 );
+}
+
+#nav li a{
+  text-decoration: none;
+  color: #4ebeca;
+}
+
+#content{
+  border: 1px solid;
+  padding: 10px 25px;
+  border-radius: 0px 0px 15px 15px;
+  background: rgb(255,246,242);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,246,242,1) 10%, rgba(240,249,255,1) 51%, rgba(203,235,255,1) 90%, rgba(161,219,255,1) 98%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,246,242,1) 10%,rgba(240,249,255,1) 51%,rgba(203,235,255,1) 90%,rgba(161,219,255,1) 98%);
+  background: radial-gradient(ellipse at center, rgba(255,246,242,1) 10%,rgba(240,249,255,1) 51%,rgba(203,235,255,1) 90%,rgba(161,219,255,1) 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff6f2', endColorstr='#a1dbff',GradientType=1 ); 
+}
+
+#content p {
+  text-indent: 5em;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px){
+  #navigation{
+    font-size: 1.25em;
+  }
+
+  #nav li{
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #nav li{
+    width: 35%;
+    margin: 10px 32.5%;
+  }
+ 
+  #content p{
+    text-indent: 3em;
+  }
+  
+  #burger-nav{
+    display: block;
+    height: 50px;
+    background: url("./img/navIcon.png") no-repeat 98% center;
+    background-size: 40px 40px;
+    margin: 0 0 0 80%;
+  }
+
+  #nav{
+    overflow: hidden;
+    height: 0;
+    
+  }
+
+  #nav.open{
+    height: auto;
+  }
+} 
