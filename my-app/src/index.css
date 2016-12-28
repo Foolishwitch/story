@@ -67,7 +67,7 @@ body {
   color: #4ebeca;
 }
 
-#content{
+#content , #extra-story, #about p, .contact-message {
   border: 1px solid;
   padding: 10px 25px;
   border-radius: 0px 0px 15px 15px;
@@ -80,6 +80,16 @@ body {
 
 #content p {
   text-indent: 5em;
+}
+
+#extra-story h3{
+  color: #579e85;
+}
+
+#extra-story img{
+  width: 25%;
+  height: 25%;
+  float: right;
 }
 
 /* MEDIA QUERIES */
@@ -100,9 +110,23 @@ body {
     margin: 10px 32.5%;
   }
  
+  .contact-message {
+    font-size: .8em;
+  }
   #content p{
     text-indent: 3em;
   }
+
+  #extra-story{
+    font-size: .75em;
+  }
+
+  #extra-story img{
+    width: 35%;
+    height: 35% ;
+    float: none;
+  }
+
   
   #burger-nav{
     display: block;
